@@ -1,22 +1,22 @@
 package rabi;
 
 class Parent {
-	void peoprty() {
-		System.out.println("Property");
+	private int a;
+	public int getA() {
+		return a;
 	}
-	void marry() {
-		System.out.println("famaily selection");
-	}
-}
-public class Demo extends Parent {
-	void marry() {
-		System.out.println(" campus selection");
-	}
-	public static void main(String[] args) {
-		Demo bb = new Demo();
-    bb.marry();
-    bb.peoprty();
-    
+	public void setA(int a) {
+		this.a = a;
 	}
 }
 
+class Demo extends Parent {
+
+	public static void main(String[] args) {
+		Demo bb = new Demo();
+		bb.setA(8);
+		int ss = bb.getA();
+		System.out.println(ss);
+	}
+
+}
