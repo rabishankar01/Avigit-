@@ -1,0 +1,9 @@
+public class first{
+
+
+public static void main (String args[]){
+    String name = "Avigit";
+    String name2 = name.replace('g' , 'b');
+    System.out.println(name2);
+}
+}
